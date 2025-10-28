@@ -1,0 +1,65 @@
+.family-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  background: #fafafa;
+  overflow: hidden;
+}
+
+.control-panel {
+  width: 270px;
+  padding: 15px;
+  background: #ffffff;
+  border-right: 2px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.control-panel h3 {
+  margin-bottom: 5px;
+}
+
+.control-panel h4 {
+  margin-top: 10px;
+}
+
+.control-panel input[type="text"] {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.control-panel button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.control-panel button:hover {
+  opacity: 0.9;
+}
+
+.tree-container {
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.link {
+  fill: none;
+  stroke: #888;
+  stroke-width: 2px;
+}
+
+.node image {
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.node:hover image {
+  transform: scale(1.1);
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fluid Tree Structure</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .tree ul {
+      list-style-type: none;
+      padding-left: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .tree li {
+      margin: 5px 0;
+      position: relative;
+    }
+
+    .tree li::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: -10px;
+      border-left: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      width: 10px;
+      height: 10px;
+    }
+
+    .tree label {
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .tree input[type="checkbox"] {
+      display: none;
+    }
+
+    .tree input[type="checkbox"] ~ ul {
+      display: none;
+    }
+
+    .tree input[type="checkbox"]:checked ~ ul {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h2>Fluid Tree Structure</h2>
+  <p>This tree structure allows you to expand and collapse nodes interactively. It's built using HTML, CSS, and JavaScript for a responsive and fluid experience.</p>
+
+  <div class="tree">
+    <ul>
+      <li>
+        <input type="checkbox" id="node1">
+        <label for="node1">Root</label>
+        <ul>
+          <li>
+            <input type="checkbox" id="node2">
+            <label for="node2">Branch A</label>
+            <ul>
+              <li>Leaf A1</li>
+              <li>Leaf A2</li>
+            </ul>
+          </li>
+          <li>
+            <input type="checkbox" id="node3">
+            <label for="node3">Branch B</label>
+            <ul>
+              <li>Leaf B1</li>
+              <li>Leaf B2</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
