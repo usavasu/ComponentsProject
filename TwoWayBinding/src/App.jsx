@@ -15,7 +15,7 @@ const App = () => {
            
             <input type='text' placeholder='Enter your name' value={title} className='bg-red-300' 
             onChange={(e) => {
-              console.log('writing... ....')
+              console.log('writing... ....   ')
               console.log(e.target.value)
               setTitle(e.target.value)
             }}></input>cd 
